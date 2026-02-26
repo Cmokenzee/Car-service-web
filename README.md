@@ -2,8 +2,6 @@
 
 A modern single-page website for a fictional Czech car service **AutoFix Servis** based in Ostrava. Serves as a template/portfolio showcase.
 
-![Website screenshot](screenshot.png)
-*Screenshot to be added.*
 
 ## Tech Stack
 
@@ -13,36 +11,6 @@ A modern single-page website for a fictional Czech car service **AutoFix Servis*
 - **Google Fonts** — Inter
 
 No frameworks, no dependencies.
-
-## How to Run
-
-Open `index.html` in your browser:
-
-```bash
-# macOS
-open index.html
-
-# Linux
-xdg-open index.html
-
-# Windows
-start index.html
-```
-
-Or use a live server (e.g. VS Code Live Server extension).
-
-## Project Structure
-
-```
-Car-service-web/
-├── index.html         # HTML page structure
-├── css/
-│   └── style.css      # All styles (CSS)
-├── js/
-│   └── main.js        # All JavaScript
-├── README.md          # Project documentation
-└── LICENSE            # MIT license
-```
 
 ## Features
 
