@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoFix Servis — Váš spolehlivý autoservis v Ostravě</title>
+    <meta name="description" content="AutoFix Servis — profesionální autoservis v Ostravě. Diagnostika, výměna oleje, brzdy, klimatizace, pneuservis a geometrie. 15+ let zkušeností.">
+    <meta property="og:title" content="AutoFix Servis — Autoservis Ostrava">
+    <meta property="og:description" content="Profesionální autoservis v Ostravě. Diagnostika, servis brzd, klimatizace, pneuservis a další služby.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="cs_CZ">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+
+    <!-- ==================== NAVIGATION ==================== -->
+    <nav class="nav" role="navigation" aria-label="Hlavní navigace">
+        <div class="container nav__inner">
+            <a href="#hero" class="nav__logo" aria-label="AutoFix Servis — domovská stránka">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                    <rect width="32" height="32" rx="8" fill="#f59e0b" fill-opacity="0.15"/>
+                    <path d="M16 6L8 12v10a2 2 0 002 2h4v-6h4v6h4a2 2 0 002-2V12l-8-6z" stroke="#f59e0b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                    <path d="M11 17h10" stroke="#f59e0b" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+                <span>Auto<span class="nav__logo-accent">Fix</span> Servis</span>
+            </a>
+            <ul class="nav__links" id="navLinks" role="list">
+                <li><a href="#sluzby" class="nav__link">Služby</a></li>
+                <li><a href="#cenik" class="nav__link">Ceník</a></li>
+                <li><a href="#o-nas" class="nav__link">O nás</a></li>
+                <li><a href="#galerie" class="nav__link">Galerie</a></li>
+                <li><a href="#recenze" class="nav__link">Recenze</a></li>
+                <li><a href="#kontakt" class="nav__link">Kontakt</a></li>
+            </ul>
+            <button class="nav__hamburger" id="hamburger" aria-label="Otevřít menu" aria-expanded="false" aria-controls="navLinks">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ==================== HERO ==================== -->
+    <section class="hero" id="hero">
+        <div class="hero__bg"></div>
+        <div class="hero__pattern"></div>
+        <div class="container hero__content">
+            <div class="hero__badge fade-in">
+                <span class="hero__badge-dot"></span>
+                Ostrava-Poruba
+            </div>
+            <h1 class="hero__title fade-in fade-in-delay-1">
+                Váš spolehlivý<br>
+                <span class="hero__title-accent">autoservis</span> v&nbsp;Ostravě
+            </h1>
+            <p class="hero__desc fade-in fade-in-delay-2">
+                Profesionální péče o váš vůz s více než 15 lety zkušeností. Certifikovaní mechanici, moderní diagnostika a férové ceny bez skrytých poplatků.
+            </p>
+            <div class="hero__actions fade-in fade-in-delay-3">
+                <a href="#kontakt" class="btn btn--primary">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+                    Objednat se
+                </a>
+                <a href="#cenik" class="btn btn--outline">Ceník služeb</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SERVICES ==================== -->
+    <section class="services" id="sluzby">
+        <div class="container">
+            <div class="section-header section-header--center fade-in">
+                <p class="section-label">Naše služby</p>
+                <h2 class="section-title">Kompletní péče o váš vůz</h2>
+                <p class="section-desc">Od běžné údržby po náročné opravy — postaráme se o vše, co váš automobil potřebuje.</p>
+            </div>
+            <div class="services__grid">
+                <!-- Engine diagnostics -->
+                <article class="service-card fade-in fade-in-delay-1">
+                    <div class="service-card__icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+                    </div>
+                    <h3 class="service-card__title">Diagnostika motoru</h3>
+                    <p class="service-card__desc">Kompletní počítačová diagnostika závad motoru a řídicích jednotek. Přečtení a smazání chybových kódů.</p>
+                    <p class="service-card__price">od 500 Kč</p>
+                </article>
+
+                <!-- Oil change -->
+                <article class="service-card fade-in fade-in-delay-2">
+                    <div class="service-card__icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C6.48 2 2 6 2 12s4 10 10 10c1.1 0 2-.9 2-2v-.6c0-.5-.2-1-.5-1.4-.3-.3-.5-.8-.5-1.3 0-1.1.9-2 2-2h2.3c3 0 5.7-2.4 5.7-5.4C23 6.4 18 2 12 2z"/><circle cx="7.5" cy="11.5" r="1.5" fill="currentColor"/><circle cx="11" cy="7.5" r="1.5" fill="currentColor"/><circle cx="16.5" cy="7.5" r="1.5" fill="currentColor"/></svg>
+                    </div>
+                    <h3 class="service-card__title">Výměna oleje</h3>
+                    <p class="service-card__desc">Výměna motorového oleje a filtru. Používáme výhradně kvalitní oleje renomovaných značek.</p>
+                    <p class="service-card__price">od 1 200 Kč</p>
+                </article>
+
+                <!-- Brakes -->
+                <article class="service-card fade-in fade-in-delay-3">
+                    <div class="service-card__icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/><line x1="12" y1="2" x2="12" y2="6"/><line x1="12" y1="18" x2="12" y2="22"/><line x1="2" y1="12" x2="6" y2="12"/><line x1="18" y1="12" x2="22" y2="12"/></svg>
+                    </div>
+                    <h3 class="service-card__title">Brzdy a podvozek</h3>
+                    <p class="service-card__desc">Výměna brzdových destiček, kotoučů a čelistí. Opravy a kontrola celého podvozku a tlumičů.</p>
+                    <p class="service-card__price">od 1 500 Kč</p>
+                </article>
+
+                <!-- AC -->
+                <article class="service-card fade-in fade-in-delay-1">
+                    <div class="service-card__icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="2" x2="12" y2="22"/><path d="M17 7l-5 5-5-5"/><path d="M17 17l-5-5-5 5"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M7 7l5 5 5-5"/></svg>
+                    </div>
+                    <h3 class="service-card__title">Klimatizace</h3>
+                    <p class="service-card__desc">Plnění a čištění autoklimatizace. Kontrola těsnosti systému a výměna kabinového filtru.</p>
+                    <p class="service-card__price">od 800 Kč</p>
+                </article>
+
+                <!-- Tire service -->
+                <article class="service-card fade-in fade-in-delay-2">
+                    <div class="service-card__icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+                    </div>
+                    <h3 class="service-card__title">Pneuservis</h3>
+                    <p class="service-card__desc">Přezutí a vyvážení kol, oprava defektů. Prodej nových pneumatik předních značek.</p>
+                    <p class="service-card__price">od 400 Kč</p>
+                </article>
+
+                <!-- Geometry -->
+                <article class="service-card fade-in fade-in-delay-3">
+                    <div class="service-card__icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h5l3-9 4 18 3-9h5"/></svg>
+                    </div>
+                    <h3 class="service-card__title">Geometrie kol</h3>
+                    <p class="service-card__desc">Přesné seřízení geometrie náprav na 3D stolici. Prodlužuje životnost pneumatik a zlepšuje jízdní vlastnosti.</p>
+                    <p class="service-card__price">od 900 Kč</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== PRICING ==================== -->
+    <section id="cenik">
+        <div class="container">
+            <div class="section-header fade-in">
+                <p class="section-label">Ceník</p>
+                <h2 class="section-title">Přehled cen služeb</h2>
+                <p class="section-desc">Orientační ceny nejčastějších úkonů. Přesnou cenu rádi sdělíme po prohlídce vozu.</p>
+            </div>
+            <div class="pricing-table-wrap fade-in">
+                <table class="pricing-table">
+                    <thead>
+                        <tr>
+                            <th>Služba</th>
+                            <th>Cena</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="category-row">
+                            <td colspan="2">Motor a diagnostika</td>
+                        </tr>
+                        <tr>
+                            <td>Počítačová diagnostika</td>
+                            <td>500 Kč</td>
+                        </tr>
+                        <tr>
+                            <td>Rozšířená diagnostika s testem</td>
+                            <td>900 Kč</td>
+                        </tr>
+                        <tr>
+                            <td>Výměna zapalovacích svíček (4 ks)</td>
+                            <td>od 800 Kč</td>
+                        </tr>
+                        <tr>
+                            <td>Výměna rozvodového řemene</td>
+                            <td>od 4 500 Kč</td>
+                        </tr>
+                        <tr class="category-row">
+                            <td colspan="2">Oleje a filtry</td>
+                        </tr>
+                        <tr>
+                            <td>Výměna motorového oleje + filtr</td>
+                            <td>od 1 200 Kč</td>
+                        </tr>
+                        <tr>
+                            <td>Výměna vzduchového filtru</td>
+                            <td>od 350 Kč</td>
+                        </tr>
+                        <tr>
+                            <td>Výměna palivového filtru</td>
+                            <td>od 600 Kč</td>
+                        </tr>
+                        <tr class="category-row">
+                            <td colspan="2">Brzdy a podvozek</td>
+                        </tr>
+                        <tr>
+                            <td>Výměna brzdových destiček (náprava)</td>
+                            <td>od 1 500 Kč</td>
+                        </tr>
+                        <tr>
+                            <td>Výměna brzdových kotoučů (náprava)</td>
+                            <td>od 2 800 Kč</td>
+                        </tr>
+                        <tr>
+                            <td>Výměna tlumičů (pár)</td>
+                            <td>od 3 500 Kč</td>
+                        </tr>
+                        <tr>
+                            <td>Výměna čepů a ramen</td>
+                            <td>od 2 000 Kč</td>
+                        </tr>
+                        <tr class="category-row">
+                            <td colspan="2">Pneumatiky a kola</td>
+                        </tr>
+                        <tr>
+                            <td>Přezutí 4 kol (ocel)</td>
+                            <td>400 Kč</td>
+                        </tr>
+                        <tr>
+                            <td>Přezutí 4 kol (alu)</td>
+                            <td>500 Kč</td>
+                        </tr>
+                        <tr>
+                            <td>Vyvážení 4 kol</td>
+                            <td>400 Kč</td>
+                        </tr>
+                        <tr>
+                            <td>Geometrie nápravy (3D)</td>
+                            <td>od 900 Kč</td>
+                        </tr>
+                        <tr class="category-row">
+                            <td colspan="2">Klimatizace a elektro</td>
+                        </tr>
+                        <tr>
+                            <td>Plnění klimatizace</td>
+                            <td>od 800 Kč</td>
+                        </tr>
+                        <tr>
+                            <td>Dezinfekce klimatizace</td>
+                            <td>350 Kč</td>
+                        </tr>
+                        <tr>
+                            <td>Výměna autobaterie</td>
+                            <td>od 500 Kč</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== ABOUT ==================== -->
+    <section class="about" id="o-nas">
+        <div class="container">
+            <div class="section-header fade-in">
+                <p class="section-label">O nás</p>
+                <h2 class="section-title">Proč právě AutoFix Servis?</h2>
+            </div>
+            <div class="about__grid">
+                <div class="about__text fade-in">
+                    <p>
+                        AutoFix Servis funguje v Ostravě-Porubě od roku 2010. Začínali jsme jako malá dílna se dvěma mechaniky — dnes máme tým pěti certifikovaných odborníků a moderně vybavenou halu s kapacitou čtyř stání.
+                    </p>
+                    <p>
+                        Specializujeme se na osobní automobily všech značek. Používáme originální a kvalitní náhradní díly, pracujeme s profesionální diagnostikou a ke každému zákazníkovi přistupujeme individuálně. Na veškeré práce poskytujeme záruku.
+                    </p>
+                    <p>
+                        Naší prioritou je transparentnost — vždy vám předem sdělíme přesnou cenu opravy a neúčtujeme nic navíc. Věříme, že spokojený zákazník je nejlepší reklama.
+                    </p>
+                </div>
+                <div class="about__stats">
+                    <div class="stat-card fade-in fade-in-delay-1">
+                        <div class="stat-card__number">15+</div>
+                        <div class="stat-card__label">let zkušeností v oboru</div>
+                    </div>
+                    <div class="stat-card fade-in fade-in-delay-2">
+                        <div class="stat-card__number">5 000+</div>
+                        <div class="stat-card__label">spokojených zákazníků</div>
+                    </div>
+                    <div class="stat-card fade-in fade-in-delay-3">
+                        <div class="stat-card__number">100%</div>
+                        <div class="stat-card__label">originální a kvalitní díly</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== GALLERY ==================== -->
+    <section id="galerie">
+        <div class="container">
+            <div class="section-header section-header--center fade-in">
+                <p class="section-label">Galerie</p>
+                <h2 class="section-title">Nahlédněte do naší dílny</h2>
+                <p class="section-desc">Moderní vybavení a čisté pracovní prostředí pro kvalitní servis vašeho vozu.</p>
+            </div>
+            <div class="gallery__grid">
+                <div class="gallery__item fade-in fade-in-delay-1" aria-label="Foto dílny">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+                    <span>Hlavní dílna</span>
+                </div>
+                <div class="gallery__item fade-in fade-in-delay-2" aria-label="Foto diagnostiky">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+                    <span>Diagnostické pracoviště</span>
+                </div>
+                <div class="gallery__item fade-in fade-in-delay-3" aria-label="Foto zvedáku">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+                    <span>Hydraulický zvedák</span>
+                </div>
+                <div class="gallery__item fade-in fade-in-delay-1" aria-label="Foto čekárny">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+                    <span>Zákaznická čekárna</span>
+                </div>
+                <div class="gallery__item fade-in fade-in-delay-2" aria-label="Foto nářadí">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+                    <span>Profesionální nářadí</span>
+                </div>
+                <div class="gallery__item fade-in fade-in-delay-3" aria-label="Foto pneuservisu">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+                    <span>Pneuservis</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== REVIEWS ==================== -->
+    <section class="reviews" id="recenze">
+        <div class="container">
+            <div class="section-header section-header--center fade-in">
+                <p class="section-label">Recenze</p>
+                <h2 class="section-title">Co říkají naši zákazníci</h2>
+                <p class="section-desc">Důvěra zákazníků je pro nás to nejdůležitější.</p>
+            </div>
+            <div class="reviews__grid">
+                <article class="review-card fade-in fade-in-delay-1">
+                    <div class="review-card__stars" aria-label="Hodnocení 5 z 5">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    </div>
+                    <p class="review-card__text">
+                        „Konečně servis, kterému můžu věřit. Vždy mi dopředu řeknou, co je potřeba opravit a kolik to bude stát. Žádná překvapení na faktuře. Doporučuji všem."
+                    </p>
+                    <div class="review-card__author">
+                        <div class="review-card__avatar" aria-hidden="true">MN</div>
+                        <div>
+                            <div class="review-card__name">Martin Novák</div>
+                            <div class="review-card__meta">Škoda Octavia · stálý zákazník</div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="review-card fade-in fade-in-delay-2">
+                    <div class="review-card__stars" aria-label="Hodnocení 5 z 5">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    </div>
+                    <p class="review-card__text">
+                        „Přivezla jsem auto s podivným zvukem z podvozku. Diagnostikovali problém během hodiny, opravili tentýž den a cena byla přesně podle nabídky. Skvělý přístup."
+                    </p>
+                    <div class="review-card__author">
+                        <div class="review-card__avatar" aria-hidden="true">PK</div>
+                        <div>
+                            <div class="review-card__name">Petra Kovářová</div>
+                            <div class="review-card__meta">VW Golf · zákazník od r. 2021</div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="review-card fade-in fade-in-delay-3">
+                    <div class="review-card__stars" aria-label="Hodnocení 5 z 5">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    </div>
+                    <p class="review-card__text">
+                        „Pravidelně zde nechávám přezouvat kola a servisovat klimatizaci. Práce vždy rychlá, čistá a za rozumnou cenu. Kluci jsou profesionálové."
+                    </p>
+                    <div class="review-card__author">
+                        <div class="review-card__avatar" aria-hidden="true">JD</div>
+                        <div>
+                            <div class="review-card__name">Jan Dvořák</div>
+                            <div class="review-card__meta">Ford Focus · stálý zákazník</div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CONTACT ==================== -->
+    <section id="kontakt">
+        <div class="container">
+            <div class="section-header fade-in">
+                <p class="section-label">Kontakt</p>
+                <h2 class="section-title">Ozvěte se nám</h2>
+                <p class="section-desc">Rádi vám poradíme a domluvíme termín opravy.</p>
+            </div>
+            <div class="contact__grid">
+                <!-- Contact info -->
+                <div class="fade-in">
+                    <div class="contact__info-item">
+                        <div class="contact__info-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                        </div>
+                        <div>
+                            <div class="contact__info-label">Adresa</div>
+                            <div class="contact__info-value">Průmyslová 1234/56<br>Ostrava-Poruba, 708 00</div>
+                        </div>
+                    </div>
+                    <div class="contact__info-item">
+                        <div class="contact__info-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+                        </div>
+                        <div>
+                            <div class="contact__info-label">Telefon</div>
+                            <div class="contact__info-value"><a href="tel:+420596123456">+420 596 123 456</a></div>
+                        </div>
+                    </div>
+                    <div class="contact__info-item">
+                        <div class="contact__info-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                        </div>
+                        <div>
+                            <div class="contact__info-label">E-mail</div>
+                            <div class="contact__info-value"><a href="mailto:info@autofixservis.cz">info@autofixservis.cz</a></div>
+                        </div>
+                    </div>
+
+                    <div class="contact__hours">
+                        <h3 class="contact__hours-title">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                            Otevírací doba
+                        </h3>
+                        <table class="hours-table">
+                            <tr>
+                                <td>Pondělí — Pátek</td>
+                                <td>7:00 — 17:00</td>
+                            </tr>
+                            <tr>
+                                <td>Sobota</td>
+                                <td>8:00 — 12:00</td>
+                            </tr>
+                            <tr>
+                                <td>Neděle</td>
+                                <td class="closed">Zavřeno</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Contact form -->
+                <form class="contact__form fade-in" id="contactForm" aria-label="Kontaktní formulář" novalidate>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Jméno a příjmení</label>
+                            <input type="text" id="name" name="name" placeholder="Jan Novák" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Telefon</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+420 123 456 789">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" placeholder="jan@email.cz" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="service">Typ služby</label>
+                        <select id="service" name="service">
+                            <option value="" disabled selected>Vyberte službu</option>
+                            <option value="diagnostika">Diagnostika motoru</option>
+                            <option value="olej">Výměna oleje</option>
+                            <option value="brzdy">Brzdy a podvozek</option>
+                            <option value="klimatizace">Klimatizace</option>
+                            <option value="pneuservis">Pneuservis</option>
+                            <option value="geometrie">Geometrie kol</option>
+                            <option value="jine">Jiné</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Zpráva</label>
+                        <textarea id="message" name="message" placeholder="Popište prosím, co potřebujete..." rows="5"></textarea>
+                    </div>
+                    <button type="submit" class="btn--submit">Odeslat poptávku</button>
+                    <div class="form-success" id="formSuccess" role="alert">
+                        Děkujeme za vaši zprávu! Ozveme se vám co nejdříve.
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div>
+                    <div class="footer__logo">
+                        <svg width="28" height="28" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                            <rect width="32" height="32" rx="8" fill="#f59e0b" fill-opacity="0.15"/>
+                            <path d="M16 6L8 12v10a2 2 0 002 2h4v-6h4v6h4a2 2 0 002-2V12l-8-6z" stroke="#f59e0b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                            <path d="M11 17h10" stroke="#f59e0b" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        <span>Auto<span class="footer__logo-accent">Fix</span> Servis</span>
+                    </div>
+                    <p class="footer__desc">
+                        Profesionální autoservis v Ostravě-Porubě. Osobní přístup, férové ceny a kvalitní práce od roku 2010.
+                    </p>
+                    <div class="footer__socials">
+                        <a href="#" class="footer__social" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+                        </a>
+                        <a href="#" class="footer__social" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                        </a>
+                        <a href="#" class="footer__social" aria-label="Telefon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="footer__heading">Rychlé odkazy</h4>
+                    <ul class="footer__links" role="list">
+                        <li><a href="#sluzby">Služby</a></li>
+                        <li><a href="#cenik">Ceník</a></li>
+                        <li><a href="#o-nas">O nás</a></li>
+                        <li><a href="#galerie">Galerie</a></li>
+                        <li><a href="#recenze">Recenze</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer__heading">Služby</h4>
+                    <ul class="footer__links" role="list">
+                        <li><a href="#sluzby">Diagnostika motoru</a></li>
+                        <li><a href="#sluzby">Výměna oleje</a></li>
+                        <li><a href="#sluzby">Brzdy a podvozek</a></li>
+                        <li><a href="#sluzby">Klimatizace</a></li>
+                        <li><a href="#sluzby">Pneuservis</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <span>&copy; 2026 AutoFix Servis. Všechna práva vyhrazena.</span>
+                <span>Vytvořil <a href="#" style="color: var(--accent);">Matěj Zedník</a></span>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
